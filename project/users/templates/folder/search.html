@@ -1,0 +1,6 @@
+{% for user in users %}
+<p>{{user.name}} {{user.gender}} {{user.color}} {{user.part}} {{user.tag}}</p>
+<p>{{user.rink}}</p>
+{% empty %}
+<p>검색 결과가 없습니다.</p>
+{% endfor %}
